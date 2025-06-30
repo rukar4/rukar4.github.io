@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: black;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background: linear-gradient(to bottom, #00003c, black);
+    padding-left: clamp(1rem, 15vw, 15rem);
+    padding-right: clamp(1rem, 15vw, 15rem);
+}
+
+h1 {
+    margin: 0;
+    padding: 2rem 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid cyan;
+    z-index: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    min-height: 10vh;
+    margin-top: auto;
+    padding: 1rem 0;
+}
