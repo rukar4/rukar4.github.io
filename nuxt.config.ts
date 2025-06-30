@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   app: {
-    baseURL: '/rukar4.github.io/',
+    // baseURL: '/rukar4.github.io/',
     head: {
       title: 'Reid Merrell - Software Engineer',
       meta: [

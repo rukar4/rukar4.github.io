@@ -3,9 +3,9 @@ import Banner from "~/components/Banner.vue";
 </script>
 
 <template>
-  <header>
-    <Banner/>
-  </header>
+  <h1 class="title center-container">
+    Reid Merrell
+  </h1>
 </template>
 
 <style>
