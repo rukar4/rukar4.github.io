@@ -9,24 +9,22 @@
         Reid Merrell
       </NuxtLink>
     </h1>
-<!--    <div>-->
-      <div>
-        <NuxtLink to="/projects/full_stack">
-          Full Stack
-        </NuxtLink>
-      </div>
-      <div>
-        <NuxtLink to="/projects/ai">
-          Artificial Intelligence
-        </NuxtLink>
-      </div>
-      <div>
-        <NuxtLink to="/projects/graphics">
-          Computer Graphics
-        </NuxtLink>
-      </div>
+    <div>
+      <NuxtLink to="/projects/full_stack">
+        Full Stack
+      </NuxtLink>
     </div>
-<!--  </div>-->
+    <div>
+      <NuxtLink to="/projects/ai">
+        Artificial Intelligence
+      </NuxtLink>
+    </div>
+    <div>
+      <NuxtLink to="/projects/graphics">
+        Computer Graphics
+      </NuxtLink>
+    </div>
+  </div>
   <hr>
 </template>
 
