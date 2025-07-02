@@ -57,6 +57,7 @@ import Banner from "~/components/Banner.vue";
 
   .about-me {
     width: 90%;
+    padding-left: 0;
   }
 }
 </style>
