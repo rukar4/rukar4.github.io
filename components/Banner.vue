@@ -40,6 +40,23 @@ div {
   align-items: center;
   padding: 1rem 0;
   box-sizing: border-box;
-  min-height: 10vh;
+  min-height: 15vh;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  div {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
 }
 </style>

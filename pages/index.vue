@@ -3,14 +3,15 @@ import Banner from "~/components/Banner.vue";
 </script>
 
 <template>
-  <h1 class="title center-container">
-    Reid Merrell
-  </h1>
-  <h2 class="center-container">
-    Welcome to my portfolio! Explore my projects and learn more about me.
-  </h2>
-  <hr>
-  <div class="info-banner grid-container" style="background-image: url('/byu-campus.jpg');">
+<!--  <h1 class="title center-container">-->
+<!--    Reid Merrell-->
+<!--  </h1>-->
+<!--  <h2 class="center-container">-->
+<!--    Welcome to my portfolio! Explore my projects and learn more about me.-->
+<!--  </h2>-->
+  <Banner />
+<!--  <hr>-->
+  <div class="info-card has-overlay" style="background-image: url('/byu-campus.jpg');">
     <div class="pfp-card">
       <h3>Reid Merrell</h3>
       <p>Computer Science Student at BYU</p>
@@ -33,26 +34,29 @@ import Banner from "~/components/Banner.vue";
 </template>
 
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-}
-
 .pfp-card {
-  grid-column: span 4;
+  //max-width: 40%;
+  min-width: 120px;
+  align-self: center;
+  aspect-ratio: 2 / 3;
   background-color: white;
-  background-size: cover;
+  //background-size: cover;
   border-radius: 8px;
   padding: 1rem;
-  color: black;
+  color: #001f2e;
 }
 
 .about-me {
-  grid-column: span 8;
-  padding: 1rem;
-  background-color: white;
-  border-radius: 8px;
-  color: black;
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .pfp-card {
+    min-height: 60px;
+  }
+
+  .about-me {
+    width: 90%;
+  }
 }
 </style>

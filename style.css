@@ -8,20 +8,28 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to bottom, #00003c, black);
+    background:
+            radial-gradient(
+                    ellipse at bottom center,
+                    rgba(0, 191, 255, 0.4) 0%,
+                    rgba(0, 191, 255, 0.2) 40%,
+                    rgba(0, 191, 255, 0) 80%
+            ),
+            #000;
     padding-left: clamp(1rem, 15vw, 15rem);
     padding-right: clamp(1rem, 15vw, 15rem);
 }
 
 h1 {
     margin: 0;
-    padding: 2rem 0;
+    padding: 0;
 }
 
 hr {
     border: none;
-    border-top: 1px solid cyan;
+    border-top: 1px solid #00BFFF;
     z-index: 1;
+    padding-bottom: 1rem;
 }
 
 a {
@@ -30,7 +38,7 @@ a {
 }
 
 a:hover {
-    color: cyan;
+    color: #00BFFF;
     text-decoration: underline;
 }
 
@@ -60,21 +68,55 @@ footer {
     justify-content: center;
 }
 
-.info-banner {
+.info-card {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-self: center;
-    min-height: 200px;
-    max-width: 100vw;
-    width: 100vw;
-    height: 50vh;
-    background-color: lightskyblue;
+    background-color: #004863;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
     padding: 2rem;
+    margin: 0 2rem;
     box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.has-overlay {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.has-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.has-overlay > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/*.grid-container {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(12, 1fr);*/
+/*    gap: 1rem;*/
+/*}*/
+
+@media (max-width: 768px) {
+    .info-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
 }
