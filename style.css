@@ -1,3 +1,10 @@
+:root {
+    --primary: #004863;
+    --secondary: #00BFFF;
+    --text-color: white;
+    --background-color: black;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -27,18 +34,18 @@ h1 {
 
 hr {
     border: none;
-    border-top: 1px solid #00BFFF;
+    border-top: 1px solid var(--secondary);
     z-index: 1;
     padding-bottom: 1rem;
 }
 
 a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: #00BFFF;
+    color: var(--secondary);
     text-decoration: underline;
 }
 
@@ -47,18 +54,6 @@ footer {
     min-height: 10vh;
     margin-top: auto;
     padding: 1rem 0;
-}
-
-.title {
-    font-size: 2.5rem;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.title:hover {
-    color: inherit;
-    text-decoration: none;
 }
 
 .center-container {
@@ -70,10 +65,10 @@ footer {
 
 .info-card {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    justify-content: flex-start;
     justify-self: center;
-    background-color: #004863;
+    background-color: var(--primary);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,6 +78,7 @@ footer {
     margin: 0 2rem;
     box-sizing: border-box;
     border-radius: 8px;
+    box-shadow: rgba(0, 191, 255, 0.64) 0 0 10px 2px;
 }
 
 .has-overlay {
@@ -113,6 +109,16 @@ footer {
 /*}*/
 
 @media (max-width: 768px) {
+    h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+
+    .title {
+        padding: 0;
+    }
+
     .info-card {
         flex-direction: column;
         align-items: center;

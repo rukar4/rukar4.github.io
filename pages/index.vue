@@ -1,5 +1,5 @@
 <script setup>
-import Banner from "~/components/Banner.vue";
+
 </script>
 
 <template>
@@ -9,7 +9,6 @@ import Banner from "~/components/Banner.vue";
 <!--  <h2 class="center-container">-->
 <!--    Welcome to my portfolio! Explore my projects and learn more about me.-->
 <!--  </h2>-->
-  <Banner />
 <!--  <hr>-->
   <div class="info-card has-overlay" style="background-image: url('/byu-campus.jpg');">
     <div class="pfp-card">
@@ -24,7 +23,7 @@ import Banner from "~/components/Banner.vue";
         I enjoy building projects that combine these fields to create innovative solutions.
       </p>
       <p>
-        In my free time, I love exploring new technologies, contributing to open-source projects, and learning about the latest advancements in AI and graphics.
+        In my free time, I love exploring the outdoors, hiking, and spending time with friends and family.
       </p>
     </div>
   </div>

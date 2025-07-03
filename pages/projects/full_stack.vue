@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <Banner/>
   <h1>
     My Full Stack Projects
   </h1>

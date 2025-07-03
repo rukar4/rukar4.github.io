@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <Banner/>
   <h1>
     My Computer Graphics Projects
   </h1>
