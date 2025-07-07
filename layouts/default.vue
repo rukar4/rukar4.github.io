@@ -43,9 +43,13 @@
       <hr>
       <p>
         Connect with me on
-        <a href="https://www.linkedin.com/in/reid-merrell-ai-graphics-developer/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/reid-merrell-ai-graphics-developer/"
+           target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
-      <p>Powered by Nuxt.js</p>
+      <p>Powered by
+        <a href="https://nuxt.com/" target="_blank" rel="noopener noreferrer">Nuxt</a>
+      </p>
+      <p>Reid Merrell 2025</p>
     </footer>
   </div>
 </template>
@@ -87,15 +91,10 @@ span {
   min-height: 10vh;
 }
 
-h1 {
-}
-
 .title {
-  font-size: 2.5rem;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  padding-left: 1rem;
 }
 
 .title:hover {
@@ -104,10 +103,7 @@ h1 {
 }
 
 .nav-link {
-  //text-align: center;
   position: relative;
-  //height:100%;
-  //width: 100%;
   font-size: 1.3rem;
   padding: 1rem;
   cursor: pointer;
@@ -134,6 +130,10 @@ h1 {
     align-items: center;
   }
 
+  .title {
+    padding: 0;
+  }
+
   .nav-link {
     width: 100%;
     text-align: center;
@@ -141,3 +141,5 @@ h1 {
   }
 }
 </style>
+<script setup lang="ts">
+</script>
