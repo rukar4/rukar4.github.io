@@ -43,9 +43,7 @@
         <a href="https://www.linkedin.com/in/reid-merrell-ai-graphics-developer/"
            target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
-      <p>Powered by
-        <a href="https://nuxt.com/" target="_blank" rel="noopener noreferrer">Nuxt</a>
-      </p>
+      <a href="https://github.com/rukar4/rukar4.github.io" target="_blank" rel="noopener noreferrer">Github</a>
       <p>Reid Merrell 2025</p>
     </footer>
   </div>

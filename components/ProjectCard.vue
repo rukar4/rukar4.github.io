@@ -3,6 +3,7 @@ defineProps({
   title: String,
   description: String,
   highlights: Array,
+  stack: Array,
   image: String,
   video: String,
   github: String,
@@ -15,11 +16,7 @@ defineProps({
 </script>
 
 <template>
-  <div :class="['project-card', { flipped }]">
-    <div class="media">
-      <img v-if="image" :src="image" alt="Project Image" class="project-image" />
-      <video v-else-if="video" :src="video" controls />
-    </div>
+  <div :class="['info-banner', { flipped }]">
     <div class="content">
       <h2>{{ title }}</h2>
       <p>{{ description }}</p>
@@ -30,17 +27,16 @@ defineProps({
         <a v-if="github" :href="github" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a v-if="demo" :href="demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
+      <p v-if="stack" class="stack"><strong>Tech Stack:</strong> {{ stack.join(', ') }}</p>
+    </div>
+    <div class="media">
+      <img v-if="image" :src="image" alt="Project Image" />
+      <video v-else-if="video" :src="video" controls />
     </div>
   </div>
 </template>
 
 <style scoped>
-.project-card {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  align-items: center;
-}
 
 .info-banner.flipped {
   flex-direction: row-reverse;
@@ -48,12 +44,24 @@ defineProps({
 
 .media img,
 .media video {
-  width: 60%;
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 8px;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  max-height: 40vh;
 }
 
 .content {
   padding: 1rem;
+}
+
+.stack {
+  padding-top: 0.5rem;
 }
 
 .links a {
