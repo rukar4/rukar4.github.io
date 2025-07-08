@@ -1,0 +1,1 @@
+import{_ as e,c as t,a as l,F as r,o as a}from"./B1TA191U.js";const i={};function o(s,n){return a(),t(r,null,[n[0]||(n[0]=l("h2",null," My AI Projects ",-1)),n[1]||(n[1]=l("ul",null,[l("li",null," Bayes Filtering Lab "),l("li",null," A* Pathfinding Script "),l("li",null," Facial Recognition Script ")],-1))],64)}const u=e(i,[["render",o]]);export{u as default};
