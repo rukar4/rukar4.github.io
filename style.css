@@ -83,7 +83,28 @@ footer {
     margin: 2rem;
     box-sizing: border-box;
     border-radius: 8px;
-    box-shadow: rgba(0, 191, 255, 0.64) 0 0 10px 2px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    min-height: 10vh;
+}
+
+.info-banner {
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    margin: 2rem;
+    box-sizing: border-box;
 }
 
 .has-overlay {

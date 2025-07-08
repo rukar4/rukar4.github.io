@@ -5,11 +5,12 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate && echo > .output/public/.nojekyll",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt generate && echo > .output/public/.nojekyll && gh-pages -d dist --dotfiles"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "nuxt": "^3.9.3",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"

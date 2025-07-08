@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   app: {
-    // baseURL: '/rukar4.github.io/',
+    baseURL: '/',
     head: {
       title: 'Reid Merrell - Software Engineer',
       meta: [
@@ -20,10 +20,5 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static'
   },
-  // runtimeConfig: {
-  //   public: {
-  //     apiUrl: process.env.API_URL
-  //   }
-  // },
   devtools: { enabled: true }
 })

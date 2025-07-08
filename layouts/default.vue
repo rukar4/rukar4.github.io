@@ -8,7 +8,6 @@
           </NuxtLink>
         </h1>
 
-        <div class="divider"/>
         <div class="nav-link">
           <NuxtLink to="/projects/full_stack">
             <span/>
@@ -16,7 +15,6 @@
           </NuxtLink>
         </div>
 
-        <div class="divider"/>
         <div class="nav-link">
           <NuxtLink to="/projects/ai">
             <span/>
@@ -24,7 +22,6 @@
           </NuxtLink>
         </div>
 
-        <div class="divider"/>
         <div class="nav-link">
           <NuxtLink to="/projects/graphics">
             <span/>
@@ -79,16 +76,6 @@ span {
   left: 0;
 
   z-index: 1;
-}
-
-.banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-  padding: 1rem 0;
-  box-sizing: border-box;
-  min-height: 10vh;
 }
 
 .title {
