@@ -55,15 +55,20 @@ const projectLinks = [
     </div>
   </div>
 
-  <div class="center-container">
-    <div>
-      <h2>Explore</h2>
-      <p>
-        Dive into my projects in full stack development, artificial intelligence, and computer graphics!
-      </p>
+  <div class="info-card has-overlay"
+       style="background-image: url('/byu-campus.jpg'); justify-content: center; width: 100%;">
+    <div style="width: 95%">
+      <div class="center-container">
+        <div>
+          <h2>Explore</h2>
+          <p>
+            Dive into my projects in full stack development, artificial intelligence, and computer graphics!
+          </p>
+        </div>
+      </div>
+      <IconBanner :links="projectLinks"/>
     </div>
   </div>
-  <IconBanner :links="projectLinks"/>
 
   <footer>
     <hr>
@@ -91,7 +96,7 @@ const projectLinks = [
   color: #001f2e;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .pfp-card {
     min-height: 120px;
     min-width: auto;

@@ -83,6 +83,7 @@ footer {
     margin: 2rem;
     box-sizing: border-box;
     border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
 }
 
 .banner {
@@ -127,14 +128,7 @@ footer {
     z-index: 2;
 }
 
-
-/*.grid-container {*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(12, 1fr);*/
-/*    gap: 1rem;*/
-/*}*/
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     h1 {
         text-align: center;
         margin-bottom: 1rem;
@@ -142,6 +136,13 @@ footer {
     }
 
     .info-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .info-banner {
         flex-direction: column;
         align-items: center;
         text-align: center;

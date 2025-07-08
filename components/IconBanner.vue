@@ -64,7 +64,7 @@ defineProps({
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .link-banner {
     flex-direction: column;
     align-items: center;
