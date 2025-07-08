@@ -3,9 +3,20 @@
 </script>
 
 <template>
-  <h1>
+  <h2>
     My Computer Graphics Projects
-  </h1>
+  </h2>
+  <ul>
+    <li>
+      Ray Tracer
+    </li>
+    <li>
+      Croaklahoma
+    </li>
+    <li>
+      OpenGL Programming
+    </li>
+  </ul>
 </template>
 
 <style scoped>
