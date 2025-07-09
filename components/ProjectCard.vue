@@ -38,22 +38,19 @@ defineProps({
 
 <style scoped>
 
-.info-banner.flipped {
-  flex-direction: row-reverse;
-}
-
 .media img,
 .media video {
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
+  max-height: 40vh;
+  object-fit: contain;
   border-radius: 8px;
 }
 
 .media {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   width: 40%;
-  max-height: 40vh;
 }
 
 .content {
@@ -67,5 +64,12 @@ defineProps({
 .links a {
   margin-right: 1rem;
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .media {
+    width: 100%;
+    max-height: 30vh;
+  }
 }
 </style>
