@@ -9,8 +9,9 @@ const projects = [
         'The robot attempts to navigate to the goal (green square) while avoiding obstacles (red squares).',
     highlights: [
       'Implemented Bayes filtering to localize the robot, including the sensor and probability models.',
+      'Allowed robot to solve mazes with varying sizes, sensor noise, and movement uncertainty.',
       'Applied value iteration to entice the robot to progress to the goal while avoiding obstacles.',
-      'Used an epsilon-greedy algorithm to encourage exploration at the start.',
+      'Used an epsilon-greedy algorithm to encourage exploration at the start.'
     ],
     video: '/localizing-robot.mp4',
     github: 'https://github.com/rukar4/BayesFiltering',
