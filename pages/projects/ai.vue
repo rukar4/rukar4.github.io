@@ -39,7 +39,7 @@ const iconLinks = [
   },
   {
     label: 'Full Stack',
-    icon: '/bot.svg',
+    icon: '/layers.svg',
     url: '/projects/full_stack'
   },
   {
