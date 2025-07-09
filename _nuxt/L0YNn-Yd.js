@@ -1,1 +1,0 @@
-import{_ as e,c as n,a as r,F as a,o}from"./B1TA191U.js";const s={};function t(u,l){return o(),n(a,null,[l[0]||(l[0]=r("h2",null," My Computer Graphics Projects ",-1)),l[1]||(l[1]=r("ul",null,[r("li",null," Ray Tracer "),r("li",null," Croaklahoma "),r("li",null," OpenGL Programming ")],-1))],64)}const i=e(s,[["render",t]]);export{i as default};
