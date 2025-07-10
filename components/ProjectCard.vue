@@ -8,7 +8,7 @@ defineProps({
   video: String,
   github: String,
   demo: String,
-  scripts: Array,
+  scripts: String,
   flipped: {
     type: Boolean,
     default: false
@@ -27,9 +27,7 @@ defineProps({
       <div class="links">
         <a v-if="github" :href="github" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a v-if="demo" :href="demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
-        <a v-for="script in scripts" :key="script.filename" :href="script.url" target="_blank" rel="noopener noreferrer">
-          {{ script.title }}
-        </a>
+        <NuxtLink v-if="scripts" :href="scripts">Scripts</NuxtLink>
       </div>
       <p v-if="stack" class="stack"><strong>Tech Stack:</strong>  {{ stack.join(', ') }}</p>
     </div>

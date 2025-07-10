@@ -28,6 +28,7 @@ const projects = [
       'Tuned heuristic function to reduce jitters and improve natural movement.',
     ],
     image: '/icons/bot.svg',
+    scripts: '/projects/ai/a_star',
     stack: ['Unity', 'C#'],
     flipped: true
   }
@@ -67,6 +68,7 @@ const iconLinks = [
       :video="project.video"
       :github="project.github"
       :demo="project.demo"
+      :scripts="project.scripts"
       :flipped="project.flipped"
   />
   <IconBanner :links="iconLinks"/>
