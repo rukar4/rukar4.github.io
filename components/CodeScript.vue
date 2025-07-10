@@ -14,7 +14,6 @@ const props = defineProps({
 const code = ref('')
 
 onMounted(async () => {
-  // 1. load the raw text
   const response = await fetch(`/scripts/${props.filename}`)
   const rawCode = await response.text()
 
@@ -27,7 +26,7 @@ onMounted(async () => {
   <div class="code-script">
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
-    <pre><code :class="`language-${language}`" v-html="code"></code></pre>
+    <pre><code :class="`language-${language}`" v-html="code" /></pre>
   </div>
 </template>
 
@@ -54,6 +53,7 @@ code {
 @media (max-width: 800px) {
   .code-script {
     margin: 0;
+    padding: 0;
     align-items: center;
   }
 
@@ -61,7 +61,7 @@ code {
     font-size: 0.8rem;
     width: 90%;
     max-height: 90vh;
-    align-self: center;
+    justify-self: center;
   }
 }
 </style>
