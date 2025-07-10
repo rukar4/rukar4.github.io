@@ -13,7 +13,7 @@ const projects = [
       'Tuned value iteration to entice the robot to progress to the goal while avoiding obstacles.',
       'Used an epsilon-greedy algorithm to encourage exploration at the start.'
     ],
-    video: '/localizing-robot.mp4',
+    video: '/videos/localizing-robot.mp4',
     github: 'https://github.com/rukar4/BayesFiltering',
     stack: ['Java']
   },
@@ -27,7 +27,7 @@ const projects = [
       'Visualizes the pathfinding process in Unity.',
       'Tuned heuristic function to reduce jitters and improve natural movement.',
     ],
-    image: '/bot.svg',
+    image: '/icons/bot.svg',
     stack: ['Unity', 'C#'],
     flipped: true
   }
@@ -36,17 +36,17 @@ const projects = [
 const iconLinks = [
   {
     label: 'Home',
-    icon: '/house.svg',
+    icon: '/icons/house.svg',
     url: '/'
   },
   {
     label: 'Full Stack',
-    icon: '/layers.svg',
+    icon: '/icons/layers.svg',
     url: '/projects/full_stack'
   },
   {
     label: 'Computer Graphics',
-    icon: '/file-image.svg',
+    icon: '/icons/file-image.svg',
     url: '/projects/graphics'
   }
 ]

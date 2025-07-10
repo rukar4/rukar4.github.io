@@ -9,7 +9,7 @@ const projects = [
       'Deployed server using Render for live demo',
       'Used custom CSS for a responsive and modern design',
     ],
-    image: '/movie-snapshot.png',
+    image: '/images/movie-snapshot.png',
     github: 'https://github.com/rukar4/Movie',
     demo: 'https://rukar4.github.io/Movie/',
     stack: ['Nuxt 3', 'CSS', 'Render']
@@ -24,7 +24,7 @@ const projects = [
       'Implemented communication between client and server using sockets',
       'Created DAOs for database operations',
     ],
-    image: '/crown.svg',
+    image: '/icons/crown.svg',
     github: 'https://github.com/rukar4/ChessGame',
     stack: ['Java', 'MySQL'],
     flipped: true
@@ -34,17 +34,17 @@ const projects = [
 const iconLinks = [
   {
     label: 'Home',
-    icon: '/house.svg',
+    icon: '/icons/house.svg',
     url: '/'
   },
   {
     label: 'Artificial Intelligence',
-    icon: '/bot.svg',
+    icon: '/icons/bot.svg',
     url: '/projects/ai'
   },
   {
     label: 'Computer Graphics',
-    icon: '/file-image.svg',
+    icon: '/icons/file-image.svg',
     url: '/projects/graphics'
   }
 ]

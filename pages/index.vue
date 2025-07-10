@@ -6,17 +6,17 @@ definePageMeta({
 const projectLinks = [
   {
     label: 'Full Stack',
-    icon: '/layers.svg',
+    icon: '/icons/layers.svg',
     url: '/projects/full_stack'
   },
   {
     label: 'Artificial Intelligence',
-    icon: '/bot.svg',
+    icon: '/icons/bot.svg',
     url: '/projects/ai'
   },
   {
     label: 'Computer Graphics',
-    icon: '/file-image.svg',
+    icon: '/icons/file-image.svg',
     url: '/projects/graphics'
   }
 ]
@@ -56,7 +56,7 @@ const projectLinks = [
   </div>
 
   <div class="info-card has-overlay"
-       style="background-image: url('/byu-campus.jpg'); justify-content: center; width: 100%;">
+       style="background-image: url('/images/byu-campus.jpg'); justify-content: center; width: 100%;">
     <div style="width: 95%">
       <div class="center-container">
         <div>

@@ -11,7 +11,7 @@ const projects = [
       'Used an optimized geometric algorithm to calculate color and lighting of certain pixels.',
       'Implemented abstract class for props, allowing easy implementation for different shapes.',
     ],
-    image: '/ray-tracer-scene-5.jpg',
+    image: '/images/ray-tracer-scene-6.jpg',
     github: 'https://github.com/rukar4/RayTracer',
     stack: ['C#', '.NET']
   },
@@ -24,7 +24,7 @@ const projects = [
       'Designed a custom 3D model for the player, including UV texturing.',
       'Developed a simple level for the player to explore, including NPCs and items.',
     ],
-    video: '/Merrell_Croaklahoma.mp4',
+    video: '/videos/Merrell_Croaklahoma.mp4',
     stack: ['Godot', 'C#', 'Maya'],
     flipped: true
   }
@@ -33,17 +33,17 @@ const projects = [
 const iconLinks = [
   {
     label: 'Home',
-    icon: '/house.svg',
+    icon: '/icons/house.svg',
     url: '/'
   },
   {
     label: 'Full Stack',
-    icon: '/layers.svg',
+    icon: '/icons/layers.svg',
     url: '/projects/full_stack'
   },
   {
     label: 'Artificial Intelligence',
-    icon: '/bot.svg',
+    icon: '/icons/bot.svg',
     url: '/projects/graphics'
   }
 ]
