@@ -1,22 +1,71 @@
 <script setup>
+const projects = [
+  {
+    title: 'Ray Tracer',
+    description: `A simple ray tracing script designed to render 3D scenes with spheres and triangles. It supports
+      basic lighting, shadows and reflections.`,
+    highlights: [
+      'Calculated the view-port and pixel locations to shoot rays through.',
+      'Used recursive rays to determine reflection and shadow.',
+      'Applied the Phong shading model for color and lighting.',
+      'Used an optimized geometric algorithm to calculate color and lighting of certain pixels.',
+      'Implemented abstract class for props, allowing easy implementation for different shapes.',
+    ],
+    image: '/ray-tracer-scene-5.jpg',
+    github: 'https://github.com/rukar4/RayTracer',
+    stack: ['C#', '.NET']
+  },
+  {
+    title: 'Croaklahoma (Video Game)',
+    description: `A basic 3D platformer where the player can move around, pick up items, and interact with NPCs.`,
+    highlights: [
+      'Implemented custom mechanics including camera movement, interaction with objects, and player controls.',
+      'Created a custom blob shadow that allows the player to easily determine where their character will land.',
+      'Designed a custom 3D model for the player, including UV texturing.',
+      'Developed a simple level for the player to explore, including NPCs and items.',
+    ],
+    video: '/Merrell_Croaklahoma.mp4',
+    stack: ['Godot', 'C#', 'Maya'],
+    flipped: true
+  }
+]
 
+const iconLinks = [
+  {
+    label: 'Home',
+    icon: '/house.svg',
+    url: '/'
+  },
+  {
+    label: 'Full Stack',
+    icon: '/layers.svg',
+    url: '/projects/full_stack'
+  },
+  {
+    label: 'Artificial Intelligence',
+    icon: '/bot.svg',
+    url: '/projects/graphics'
+  }
+]
 </script>
 
 <template>
-  <h2>
-    My Computer Graphics Projects
-  </h2>
-  <ul>
-    <li>
-      Ray Tracer
-    </li>
-    <li>
-      Croaklahoma
-    </li>
-    <li>
-      OpenGL Programming
-    </li>
-  </ul>
+  <h1 class="center-container">
+    Computer Graphics Projects
+  </h1>
+  <ProjectCard
+      v-for="project in projects"
+      :key="project.title"
+      :title="project.title"
+      :description="project.description"
+      :highlights="project.highlights"
+      :stack="project.stack"
+      :image="project.image"
+      :github="project.github"
+      :video="project.video"
+      :flipped="project.flipped"
+  />
+  <IconBanner :links="iconLinks"/>
 </template>
 
 <style scoped>

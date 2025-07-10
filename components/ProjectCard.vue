@@ -27,7 +27,7 @@ defineProps({
         <a v-if="github" :href="github" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a v-if="demo" :href="demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
-      <p v-if="stack" class="stack"><strong>Tech Stack:</strong> {{ stack.join(', ') }}</p>
+      <p v-if="stack" class="stack"><strong>Tech Stack:</strong>  {{ stack.join(', ') }}</p>
     </div>
     <div class="media">
       <img v-if="image" :src="image" alt="Project Image" />
@@ -54,6 +54,7 @@ defineProps({
 }
 
 .content {
+  flex: 1;
   padding: 1rem;
   text-align: left;
 }
