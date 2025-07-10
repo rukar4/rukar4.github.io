@@ -34,6 +34,7 @@
 
     <main>
       <slot/>
+      <button class="scroll-to-top"/>
     </main>
 
     <footer>
@@ -107,6 +108,26 @@ span {
 .nav-link:hover {
   background-color: rgba(0, 191, 255, 0.1);
   box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 48px;
+  width: 48px;
+  background: var(--secondary);
+  background-image: url('/icons/arrow-up.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 191, 255, 0.5);
 }
 
 @media (max-width: 768px) {
