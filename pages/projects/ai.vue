@@ -25,6 +25,7 @@ const projects = [
       'Implemented the A* algorithm for efficient pathfinding.',
       'Supports dynamic obstacles and grid resizing.',
       'Visualizes the pathfinding process in Unity.',
+      'Tuned heuristic function to reduce jitters and improve natural movement.',
     ],
     image: '/bot.svg',
     stack: ['Unity', 'C#'],

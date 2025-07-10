@@ -105,6 +105,7 @@ const projectLinks = [
 
   .about-me {
     width: 90%;
+    text-align: left;
   }
 }
 </style>
