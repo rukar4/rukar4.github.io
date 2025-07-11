@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Portfolio website containing computer science projects' }
       ],
       link: [
-        { rel: 'icon', type: 'image/jpeg', href: '/bot.svg' }
+        { rel: 'icon', type: 'image/jpeg', href: '/icons/bot.svg' }
       ]
     }
   },

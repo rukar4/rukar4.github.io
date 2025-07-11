@@ -24,7 +24,7 @@ const projects = [
       'Implemented communication between client and server using sockets',
       'Created DAOs for database operations',
     ],
-    image: '/icons/crown.svg',
+    image: '/images/chess-snapshot.jpg',
     github: 'https://github.com/rukar4/ChessGame',
     stack: ['Java', 'MySQL'],
     flipped: true
@@ -67,7 +67,6 @@ const iconLinks = [
       :flipped="project.flipped"
   />
   <IconBanner :links="iconLinks" />
-
 </template>
 
 <style scoped>

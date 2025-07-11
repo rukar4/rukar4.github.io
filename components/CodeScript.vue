@@ -26,7 +26,7 @@ onMounted(async () => {
   <div class="code-script">
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
-    <pre><code :class="`language-${language}`" v-html="code" /></pre>
+    <pre><code :class="`language-${language}`" v-html="code"></code></pre>
   </div>
 </template>
 

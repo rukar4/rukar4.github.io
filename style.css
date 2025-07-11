@@ -12,6 +12,7 @@ html, body {
     background: black;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body {
