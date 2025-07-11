@@ -27,7 +27,7 @@ const projects = [
       'Visualizes the pathfinding process in Unity.',
       'Tuned heuristic function to reduce jitters and improve natural movement.',
     ],
-    image: '/icons/bot.svg',
+    image: '/images/a-star-path.jpg',
     scripts: '/projects/ai/a_star',
     stack: ['Unity', 'C#'],
     flipped: true

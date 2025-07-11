@@ -25,6 +25,7 @@ const projects = [
       'Developed a simple level for the player to explore, including NPCs and items.',
     ],
     video: '/videos/Merrell_Croaklahoma.mp4',
+    scripts: '/projects/graphics/croaklahoma',
     stack: ['Godot', 'C#', 'Maya'],
     flipped: true
   }
@@ -63,6 +64,7 @@ const iconLinks = [
       :image="project.image"
       :github="project.github"
       :video="project.video"
+      :scripts="project.scripts"
       :flipped="project.flipped"
   />
   <IconBanner :links="iconLinks"/>

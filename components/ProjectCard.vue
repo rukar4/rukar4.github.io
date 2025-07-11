@@ -29,30 +29,38 @@ defineProps({
         <a v-if="demo" :href="demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
         <NuxtLink v-if="scripts" :href="scripts">Scripts</NuxtLink>
       </div>
-      <p v-if="stack" class="stack"><strong>Tech Stack:</strong>  {{ stack.join(', ') }}</p>
+      <p v-if="stack" class="stack"><strong>Tech Stack:</strong> {{ stack.join(', ') }}</p>
     </div>
     <div class="media">
-      <img v-if="image" :src="image" alt="Project Image" />
-      <video v-else-if="video" :src="video" controls />
+      <div class="media-clip">
+        <img v-if="image" :src="image" alt="Project Image"/>
+        <video v-else-if="video" :src="video" controls/>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.media {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.media-clip {
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
 .media img,
 .media video {
   width: 100%;
   max-height: 40vh;
   object-fit: contain;
-  border-radius: 8px;
-}
-
-.media {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  width: 40%;
+  clip-path: inset(0 round 8px);
+  background-color: var(--primary);
 }
 
 .content {
