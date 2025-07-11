@@ -59,7 +59,6 @@ import ScrollUpBtn from "~/components/ScrollUpBtn.vue";
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  scroll-behavior: smooth;
 }
 
 main {
@@ -78,7 +77,6 @@ span {
   height: 100%;
   top: 0;
   left: 0;
-
   z-index: 1;
 }
 

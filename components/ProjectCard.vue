@@ -14,6 +14,11 @@ defineProps({
     default: false
   }
 })
+
+const zoomed = ref(false)
+const toggleZoom = () => {
+  zoomed.value = !zoomed.value
+}
 </script>
 
 <template>
@@ -33,10 +38,20 @@ defineProps({
     </div>
     <div class="media">
       <div class="media-clip">
-        <img v-if="image" :src="image" alt="Project Image"/>
+        <img
+            v-if="image"
+            :src="image"
+            alt="{{ title }}"
+            @click="toggleZoom"
+            class="clickable"
+        />
         <video v-else-if="video" :src="video" controls/>
       </div>
     </div>
+  </div>
+
+  <div v-if="zoomed" class="zoom-overlay" @click="toggleZoom">
+    <img :src="image" alt="{{ title }}" class="zoomed-img" />
   </div>
 </template>
 
@@ -76,6 +91,32 @@ defineProps({
 .links a {
   margin-right: 1rem;
   text-decoration: underline;
+}
+
+.clickable {
+  cursor: zoom-in;
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.zoomed-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.8);
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 800px) {

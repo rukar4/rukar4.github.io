@@ -45,7 +45,7 @@ const iconLinks = [
   {
     label: 'Artificial Intelligence',
     icon: '/icons/bot.svg',
-    url: '/projects/graphics'
+    url: '/projects/ai'
   }
 ]
 </script>
