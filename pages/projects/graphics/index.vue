@@ -2,10 +2,11 @@
 const projects = [
   {
     title: 'Ray Tracer',
-    description: `A simple ray tracing script designed to render 3D scenes with spheres and triangles. It supports
-      basic lighting, shadows and reflections.`,
+    description: `A ray tracer command line app that takes in a file and generates a PPM image.`,
     highlights: [
+      'Created a simple parser to read .txt files and generate ray traced images.',
       'Calculated the view-port and pixel locations to shoot rays through.',
+      'Allows for custom camera positions and angles to view a scene.',
       'Used recursive rays to determine reflection and shadow.',
       'Applied the Phong shading model for color and lighting.',
       'Used an optimized geometric algorithm to calculate color and lighting of certain pixels.',
