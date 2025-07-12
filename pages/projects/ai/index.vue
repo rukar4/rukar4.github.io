@@ -23,7 +23,6 @@ const projects = [
         The script can be attached to any GameObject and allows for dynamic pathfinding in a grid-based environment.`,
     highlights: [
       'Implemented the A* algorithm for efficient pathfinding.',
-      'Supports dynamic obstacles and grid resizing.',
       'Visualizes the pathfinding process in Unity.',
       'Tuned heuristic function to reduce jitters and improve natural movement.',
     ],

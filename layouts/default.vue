@@ -97,6 +97,7 @@ span {
   padding: 1rem;
   cursor: pointer;
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 8px;
 }
 
 .nav-link :deep(a) {
@@ -109,7 +110,7 @@ span {
 }
 
 .nav-link:hover {
-  background-color: rgba(0, 191, 255, 0.1);
+  background-color: var(--primary);
   box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
 }
 

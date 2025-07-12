@@ -8,7 +8,7 @@ const scripts = [
   },
   {
     title: 'AStarPath Class',
-    description: 'Handles the A* pathfinding logic, including tracking the frings nodes and computing the path.',
+    description: 'Handles the A* pathfinding logic, including tracking the fringe nodes and computing the path.',
     filename: 'a_star_scripts/AStarPath.cs',
     language: 'csharp'
   },
