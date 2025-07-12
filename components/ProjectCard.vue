@@ -45,7 +45,7 @@ const toggleZoom = () => {
             @click="toggleZoom"
             class="clickable"
         />
-        <video v-else-if="video" :src="video" controls/>
+        <video v-else-if="video" :src="video" muted controls/>
       </div>
     </div>
   </div>
