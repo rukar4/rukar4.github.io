@@ -49,9 +49,6 @@ const projectLinks = [
       </p>
     </div>
     <div class="pfp-card">
-      <h3>Reid Merrell</h3>
-      <p>Computer Science Student at BYU</p>
-      <p>AI and Graphics Enthusiast</p>
     </div>
   </div>
 
@@ -86,14 +83,22 @@ const projectLinks = [
 
 <style>
 .pfp-card {
-  min-width: 200px;
-  align-self: start;
-  aspect-ratio: 2 / 3;
+  width: 25%;
+  aspect-ratio: 1 / 1;
   background-color: white;
+  background-image: url('/images/pfp-square.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
   color: #001f2e;
+}
+
+.about-me {
+  width: 60%;
+  align-content: center;
 }
 
 @media (max-width: 800px) {
