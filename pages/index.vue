@@ -48,7 +48,10 @@ const projectLinks = [
         role-playing game.
       </p>
     </div>
-    <div class="pfp-card">
+    <div class="media pfp-card">
+      <div class="media-clip">
+        <img src="/images/pfp-square.jpg" alt="Reid Merrell">
+      </div>
     </div>
   </div>
 
@@ -82,30 +85,20 @@ const projectLinks = [
 </template>
 
 <style>
-.pfp-card {
-  width: 25%;
-  aspect-ratio: 1 / 1;
-  background-color: white;
-  background-image: url('/images/pfp-square.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem;
-  color: #001f2e;
-}
-
 .about-me {
   width: 60%;
   align-content: center;
 }
 
+.pfp-card {
+  width: 40%;
+  padding-left: 2rem;
+}
+
 @media (max-width: 800px) {
   .pfp-card {
-    min-height: 120px;
-    min-width: auto;
-    align-self: auto;
+    width: 60%;
+    padding: 0;
   }
 
   .about-me {

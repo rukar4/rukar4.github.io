@@ -56,28 +56,6 @@ const toggleZoom = () => {
 </template>
 
 <style scoped>
-.media {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  width: 40%;
-}
-
-.media-clip {
-  display: inline-block;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.media img,
-.media video {
-  width: 100%;
-  max-height: 40vh;
-  object-fit: contain;
-  clip-path: inset(0 round 8px);
-  background-color: var(--primary);
-}
-
 .content {
   flex: 1;
   padding: 1rem;
@@ -117,12 +95,5 @@ const toggleZoom = () => {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 191, 255, 0.8);
   transition: transform 0.3s ease;
-}
-
-@media (max-width: 800px) {
-  .media {
-    width: 100%;
-    max-height: 30vh;
-  }
 }
 </style>
