@@ -1,4 +1,4 @@
-import{_ as h}from"./CGIUk0__.js";import{_ as g}from"./BL04mPMo.js";import{c as i,a as d,b as o,F as s,r as p,o as a}from"./BRKCZKTX.js";import"./Vh5GmTeh.js";const y={__name:"index",setup(m){const n=[{title:"Maze Solving Robot",description:`A program to simulate Bayes filtering for a maze-solving robot using Java.
+import{_ as h}from"./DjiXECuK.js";import{_ as g}from"./n_Vy-4Oi.js";import{c as i,a as d,b as o,F as s,j as p,o as a}from"./BAnY6Y_H.js";import"./BldDE9xs.js";const y={__name:"index",setup(m){const n=[{title:"Maze Solving Robot",description:`A program to simulate Bayes filtering for a maze-solving robot using Java.
         The robot has four sensors to detect walls in each of the cardinal directions.
         The display shows where the robot actually is vs where the robot believes it is. The robot's belief is shown
         as a heatmap of probabilities. The darker the blue, the more likely the robot is in that cell.
