@@ -22,70 +22,6 @@ const projectLinks = [
     url: '/projects/graphics'
   }
 ]
-
-const projects = [
-  {
-    title: 'Maze Solving Robot',
-    description: `A program to simulate Bayes filtering for a maze-solving robot using Java.
-        The robot has four sensors to detect walls in each of the cardinal directions.
-        The display shows where the robot actually is vs where the robot believes it is. The robot\'s belief is shown
-        as a heatmap of probabilities. The darker the blue, the more likely the robot is in that cell.
-        The robot attempts to navigate to the goal (green square) while avoiding obstacles (red squares).`,
-    highlights: [
-      'Implemented Bayes filtering to localize the robot, including the sensor and probability models.',
-      'Allowed robot to solve mazes with varying sizes, sensor noise, and movement uncertainty.',
-      'Tuned value iteration to entice the robot to progress to the goal while avoiding obstacles.',
-      'Used an epsilon-greedy algorithm to encourage exploration at the start.'
-    ],
-    video: '/videos/localizing-robot.mp4',
-    github: 'https://github.com/rukar4/BayesFiltering',
-    stack: ['Java']
-  },
-  {
-    title: 'Ray Tracer',
-    description: `A ray tracer command line app that takes in a file and generates a PPM image.`,
-    highlights: [
-      'Created a simple parser to read .txt files and generate ray traced images.',
-      'Calculated the view-port and pixel locations to shoot rays through.',
-      'Allows for custom camera positions and angles to view a scene.',
-      'Used recursive rays to determine reflection and shadow.',
-      'Applied the Phong shading model for color and lighting.',
-      'Used an optimized geometric algorithm to calculate color and lighting of certain pixels.',
-      'Implemented abstract class for props, allowing easy implementation for different shapes.',
-    ],
-    image: '/images/ray-tracer-scene-6.jpg',
-    github: 'https://github.com/rukar4/RayTracer',
-    stack: ['C#', '.NET']
-  },
-  {
-    title: 'Movie Search App',
-    description: 'A simple movie search application designed to return the most popular movies based on a query.',
-    highlights: [
-      'Implemented client-server communication using Express.js and Axios',
-      'Communicated with third party API to retrieve movie details (TMDB)',
-      'Deployed server using Render for live demo',
-      'Used custom CSS for a responsive and modern design',
-    ],
-    image: '/images/movie-snapshot.png',
-    github: 'https://github.com/rukar4/Movie',
-    demo: 'https://rukar4.github.io/Movie/',
-    stack: ['Nuxt 3', 'CSS', 'Render']
-  },
-  {
-    title: 'Chess Game',
-    description: 'A chess game server that can host multiple games with a terminal client and back-end API.',
-    highlights: [
-      'Implemented all chess rules and game logic in Java',
-      'Built a terminal client for real-time interaction',
-      'Designed a database for game management',
-      'Implemented communication between client and server using sockets',
-      'Created DAOs for database operations',
-    ],
-    image: '/images/chess-snapshot.jpg',
-    github: 'https://github.com/rukar4/ChessGame',
-    stack: ['Java', 'MySQL']
-  }
-]
 </script>
 
 <template>
@@ -121,43 +57,20 @@ const projects = [
     </div>
   </div>
 
-  <hr>
-  <h2 class="center-container">
-    Explore My Projects
-  </h2>
-
-  <!--  <div class="info-card has-overlay"-->
-  <!--       style="background-image: url('/images/byu-campus.jpg'); justify-content: center; width: 100%;">-->
-  <!--    <div style="width: 95%">-->
-  <!--      <div class="center-container">-->
-  <!--        <div>-->
-  <!--          <h2>Explore</h2>-->
-  <!--          <p>-->
-  <!--            Dive into my projects in full stack development, artificial intelligence, and computer graphics!-->
-  <!--          </p>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--      <IconBanner :links="projectLinks"/>-->
-  <!--    </div>-->
-  <!--  </div>-->
-
-<!--  <h1 class="center-container">-->
-<!--    Projects-->
-<!--  </h1>-->
-
-  <ProjectCard
-      v-for="(project, index) in projects"
-      :key="project.title"
-      :title="project.title"
-      :description="project.description"
-      :highlights="project.highlights"
-      :stack="project.stack"
-      :image="project.image"
-      :video="project.video"
-      :github="project.github"
-      :demo="project.demo"
-      :flipped="index % 2 !== 1"
-  />
+    <div class="info-card has-overlay"
+         style="background-image: url('/images/byu-campus.jpg'); justify-content: center; width: 100%;">
+      <div style="width: 95%">
+        <div class="center-container">
+          <div>
+            <h2>Explore</h2>
+            <p>
+              Dive into my projects in full stack development, artificial intelligence, and computer graphics!
+            </p>
+          </div>
+        </div>
+        <IconBanner :links="projectLinks"/>
+      </div>
+    </div>
 
   <footer>
     <hr>
