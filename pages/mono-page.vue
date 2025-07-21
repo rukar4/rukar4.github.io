@@ -99,7 +99,7 @@ const projects = [
 
   <div class="info-banner">
     <div class="about-me">
-      <h3>About Me</h3>
+      <h2>About Me</h2>
       <p>
         Hello! I am Reid Merrell, a computer science undergrad at Brigham Young University. Technology has always been
         fascinating to me, and I entered my college career with a desire to learn more about it. Shortly into my college
@@ -137,7 +137,7 @@ const projects = [
       :video="project.video"
       :github="project.github"
       :demo="project.demo"
-      :flipped="index % 2 !== 1"
+      :flipped="index % 2 === 1"
   />
 
   <footer>

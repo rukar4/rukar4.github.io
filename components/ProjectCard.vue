@@ -24,7 +24,7 @@ const toggleZoom = () => {
 <template>
   <div :class="['info-banner', { flipped }]">
     <div class="content">
-      <h3>{{ title }}</h3>
+      <h2>{{ title }}</h2>
       <p>{{ description }}</p>
       <ul>
         <li v-for="highlight in highlights" :key="highlight">{{ highlight }}</li>
