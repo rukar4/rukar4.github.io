@@ -1,4 +1,9 @@
 <script setup>
+const router = useRouter()
+onMounted(() => {
+  router.push('/mono-page')
+})
+
 definePageMeta({
   layout: ''
 })

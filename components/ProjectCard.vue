@@ -24,17 +24,19 @@ const toggleZoom = () => {
 <template>
   <div :class="['info-banner', { flipped }]">
     <div class="content">
-      <h2>{{ title }}</h2>
-      <p>{{ description }}</p>
-      <ul>
-        <li v-for="highlight in highlights" :key="highlight">{{ highlight }}</li>
-      </ul>
-      <div class="links">
-        <a v-if="github" :href="github" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a v-if="demo" :href="demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
-        <NuxtLink v-if="scripts" :href="scripts">Scripts</NuxtLink>
+      <div>
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+        <ul>
+          <li v-for="highlight in highlights" :key="highlight">{{ highlight }}</li>
+        </ul>
+        <div class="links">
+          <a v-if="github" :href="github" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a v-if="demo" :href="demo" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <NuxtLink v-if="scripts" :href="scripts">Scripts</NuxtLink>
+        </div>
+        <p v-if="stack" class="stack"><strong>Tech Stack:</strong> {{ stack.join(', ') }}</p>
       </div>
-      <p v-if="stack" class="stack"><strong>Tech Stack:</strong> {{ stack.join(', ') }}</p>
     </div>
     <div class="media">
       <div class="media-clip">
@@ -51,15 +53,21 @@ const toggleZoom = () => {
   </div>
 
   <div v-if="zoomed" class="zoom-overlay" @click="toggleZoom">
-    <img :src="image" alt="{{ title }}" class="zoomed-img" />
+    <img :src="image" alt="{{ title }}" class="zoomed-img"/>
   </div>
 </template>
 
 <style scoped>
 .content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 clamp(2rem, 8vw, 12rem) 0 0;
   flex: 1;
-  padding: 0 1rem;
-  text-align: left;
+}
+
+.info-banner.flipped .content {
+  align-items: flex-end;
+  padding: 0 clamp(2rem, 8vw, 12rem);
 }
 
 .stack {
