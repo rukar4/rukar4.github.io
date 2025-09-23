@@ -27,9 +27,9 @@ const toggleZoom = () => {
   <div :class="['info-banner', { flipped }]">
     <div class="content">
       <div>
-        <div style="display: flex; justify-content: space-between">
+        <div class="project-title">
           <h2>{{ title }}</h2>
-          <h2 style="font-style: italic">{{ date }}</h2>
+          <h3 style="font-style: italic">{{ date }}</h3>
         </div>
         <p>{{ description }}</p>
         <ul>
@@ -69,6 +69,12 @@ const toggleZoom = () => {
   flex-direction: column;
   padding: 0 clamp(2rem, 8vw, 12rem) 0 0;
   flex: 1;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .info-banner.flipped .content {
@@ -115,5 +121,17 @@ const toggleZoom = () => {
   font-style: italic;
   color: #bebebe;
   margin-top: 0.5rem;
+}
+
+@media (max-width: 1500px) {
+  .project-title {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .content, .info-banner.flipped .content {
+    padding: 0 clamp(1rem, 5vw, 6rem);
+  }
 }
 </style>

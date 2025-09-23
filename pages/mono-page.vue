@@ -185,7 +185,7 @@ const projects = [
   padding-left: 2rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .pfp-card {
     width: 60%;
     padding: 0;

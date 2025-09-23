@@ -114,7 +114,7 @@ span {
   box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
   .banner {
     flex-direction: column;
     align-items: center;

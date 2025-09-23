@@ -50,7 +50,7 @@ code {
   white-space: pre;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .code-script {
     margin: 0;
     padding: 0;

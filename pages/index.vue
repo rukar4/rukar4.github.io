@@ -99,10 +99,10 @@ const projectLinks = [
 
 .pfp-card {
   width: 40%;
-  padding-left: 2rem;
+  margin-left: 2rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .pfp-card {
     width: 60%;
     padding: 0;
