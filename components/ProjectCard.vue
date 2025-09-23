@@ -1,6 +1,7 @@
 <script setup>
 defineProps({
   title: String,
+  date: String,
   description: String,
   highlights: Array,
   stack: Array,
@@ -26,7 +27,10 @@ const toggleZoom = () => {
   <div :class="['info-banner', { flipped }]">
     <div class="content">
       <div>
-        <h2>{{ title }}</h2>
+        <div style="display: flex; justify-content: space-between">
+          <h2>{{ title }}</h2>
+          <h2 style="font-style: italic">{{ date }}</h2>
+        </div>
         <p>{{ description }}</p>
         <ul>
           <li v-for="highlight in highlights" :key="highlight">{{ highlight }}</li>

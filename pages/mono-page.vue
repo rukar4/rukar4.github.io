@@ -26,6 +26,7 @@ const projectLinks = [
 const projects = [
   {
     title: 'Duckiebot',
+    date: 'Sept 2025 - Dec 2025',
     description: `A differential drive robot that uses computer vision to navigate a city, avoid obstacles and recognize
         signs to perform traffic functions.`,
     highlights: [
@@ -38,6 +39,7 @@ const projects = [
   },
   {
     title: 'Maze Solving Robot',
+    date: 'Nov 2024 - Dec 2024',
     description: `A program to simulate Bayes filtering for a maze-solving robot using Java.`,
     highlights: [
       'Implemented Bayes filtering to localize the robot, including the sensor and probability models.',
@@ -55,6 +57,7 @@ const projects = [
   },
   {
     title: 'Ray Tracer',
+    date: 'Jan 2025 - Jul 2025',
     description: `A ray tracer command line app that takes in a file and generates a PPM image.`,
     highlights: [
       'Created a simple parser to read .txt files and generate ray traced images.',
@@ -72,6 +75,7 @@ const projects = [
   },
   {
     title: 'Movie Search App',
+    date: 'Jul 2025',
     description: 'A simple movie search application designed to return the most popular movies based on a query.',
     highlights: [
       'Implemented client-server communication using Express.js and Axios',
@@ -86,6 +90,7 @@ const projects = [
   },
   {
     title: 'Chess Game',
+    date: 'Aug 2023 - Dec 2023',
     description: 'A chess game server that can host multiple games with a terminal client and back-end API.',
     highlights: [
       'Implemented all chess rules and game logic in Java',
@@ -143,6 +148,7 @@ const projects = [
       v-for="(project, index) in projects"
       :key="project.title"
       :title="project.title"
+      :date="project.date"
       :description="project.description"
       :highlights="project.highlights"
       :stack="project.stack"
