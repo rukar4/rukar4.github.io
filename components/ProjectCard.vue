@@ -9,6 +9,7 @@ defineProps({
   github: String,
   demo: String,
   scripts: String,
+  mediaNote: String,
   flipped: {
     type: Boolean,
     default: false
@@ -48,6 +49,7 @@ const toggleZoom = () => {
             class="clickable"
         />
         <video v-else-if="video" :src="video" muted controls/>
+        <div v-if="mediaNote" class="media-note">{{ mediaNote }}</div>
       </div>
     </div>
   </div>
@@ -103,5 +105,11 @@ const toggleZoom = () => {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 191, 255, 0.8);
   transition: transform 0.3s ease;
+}
+
+.media-note {
+  font-style: italic;
+  color: #bebebe;
+  margin-top: 0.5rem;
 }
 </style>

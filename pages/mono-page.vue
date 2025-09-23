@@ -25,12 +25,20 @@ const projectLinks = [
 
 const projects = [
   {
+    title: 'Duckiebot',
+    description: `A differential drive robot that uses computer vision to navigate a city, avoid obstacles and recognize
+        signs to perform traffic functions.`,
+    highlights: [
+        'Created ROS (Robotics Operating System) nodes to handle image processing, control, and navigation.',
+        'Calibrated camera to account for distortion and improve image processing accuracy.',
+        'Used odometry to track the robot\'s position and orientation.',
+    ],
+    mediaNote: 'Video coming soon!',
+    stack: ['ROS', 'Docker', 'Python']
+  },
+  {
     title: 'Maze Solving Robot',
-    description: `A program to simulate Bayes filtering for a maze-solving robot using Java.
-        The robot has four sensors to detect walls in each of the cardinal directions.
-        The display shows where the robot actually is vs where the robot believes it is. The robot\'s belief is shown
-        as a heatmap of probabilities. The darker the blue, the more likely the robot is in that cell.
-        The robot attempts to navigate to the goal (green square) while avoiding obstacles (red squares).`,
+    description: `A program to simulate Bayes filtering for a maze-solving robot using Java.`,
     highlights: [
       'Implemented Bayes filtering to localize the robot, including the sensor and probability models.',
       'Allowed robot to solve mazes with varying sizes, sensor noise, and movement uncertainty.',
@@ -38,6 +46,10 @@ const projects = [
       'Used an epsilon-greedy algorithm to encourage exploration at the start.'
     ],
     video: '/videos/localizing-robot.mp4',
+    mediaNote: `The robot has four sensors to detect walls in each of the cardinal directions.
+        The display shows where the robot actually is vs where the robot believes it is. The robot\'s belief is shown
+        as a heatmap of probabilities. The darker the blue, the more likely the robot is in that cell.
+        The robot attempts to navigate to the goal (green square) while avoiding obstacles (red squares).`,
     github: 'https://github.com/rukar4/BayesFiltering',
     stack: ['Java']
   },
@@ -55,7 +67,8 @@ const projects = [
     ],
     image: '/images/ray-tracer-scene-6.jpg',
     github: 'https://github.com/rukar4/RayTracer',
-    stack: ['C#', '.NET']
+    stack: ['C#', '.NET'],
+    mediaNote: 'Ray traced image sample'
   },
   {
     title: 'Movie Search App',
@@ -135,6 +148,7 @@ const projects = [
       :stack="project.stack"
       :image="project.image"
       :video="project.video"
+      :media-note="project.mediaNote"
       :github="project.github"
       :demo="project.demo"
       :flipped="index % 2 === 1"
