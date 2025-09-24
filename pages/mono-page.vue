@@ -34,6 +34,7 @@ const projects = [
         'Calibrated camera to account for distortion and improve image processing accuracy.',
         'Used odometry to track the robot\'s position and orientation.',
     ],
+    image: '/images/duckietown.jpg',
     mediaNote: 'Video coming soon!',
     stack: ['ROS', 'Docker', 'Python']
   },

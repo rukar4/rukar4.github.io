@@ -100,10 +100,12 @@ footer {
 .info-banner {
     display: flex;
     justify-content: space-between;
+    justify-self: center;
     padding: 2rem;
     margin-top: 2rem;
     box-sizing: border-box;
     width: 100%;
+    max-width: 1500px;
 }
 
 .info-banner.flipped {

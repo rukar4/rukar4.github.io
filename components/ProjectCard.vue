@@ -79,7 +79,7 @@ const toggleZoom = () => {
 
 .info-banner.flipped .content {
   align-items: flex-end;
-  padding: 0 clamp(2rem, 8vw, 12rem);
+  padding: 0 0 0 clamp(2rem, 8vw, 12rem);
 }
 
 .stack {
