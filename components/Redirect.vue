@@ -20,9 +20,9 @@ const props = defineProps({
 
 import { onMounted } from 'vue'
 
-// onMounted(() => {
-//   window.location.href = props.target
-// })
+onMounted(() => {
+  window.location.href = props.target
+})
 </script>
 
 <style scoped>
