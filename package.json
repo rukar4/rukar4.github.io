@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && echo > .output/public/.nojekyll && gh-pages -d dist --dotfiles"
+    "deploy": "nuxt generate && cp CNAME dist/CNAME && echo > .output/public/.nojekyll && gh-pages -d dist --dotfiles"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
