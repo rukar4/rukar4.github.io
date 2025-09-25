@@ -1,1 +1,0 @@
-import{R as e}from"./CmZq0HN6.js";import{k as o,l as r,o as a}from"./CZ0hFIFS.js";const _=o({__name:"github",setup(c){return(n,s)=>{const t=e;return a(),r(t,{target:"https://github.com/rukar4",name:"GitHub"})}}});export{_ as default};
