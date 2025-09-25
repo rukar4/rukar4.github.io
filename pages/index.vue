@@ -1,30 +1,90 @@
 <script setup>
-const router = useRouter()
-onMounted(() => {
-  router.push('/mono-page')
-})
-
 definePageMeta({
   layout: ''
 })
 
 let flipped = ref(false)
 
-const projectLinks = [
+const projects = [
   {
-    label: 'Full Stack',
-    icon: '/icons/layers.svg',
-    url: '/projects/full_stack'
+    title: 'Duckiebot',
+    date: 'Sept 2025 - Dec 2025',
+    description: `A differential drive robot that uses computer vision to navigate a city, avoid obstacles and recognize
+        signs to perform traffic functions.`,
+    highlights: [
+        'Created ROS (Robotics Operating System) nodes to handle image processing, control, and navigation.',
+        'Calibrated camera to account for distortion and improve image processing accuracy.',
+        'Used odometry to track the robot\'s position and orientation.',
+    ],
+    image: '/images/duckietown.jpg',
+    mediaNote: 'Video coming soon!',
+    stack: ['ROS', 'Docker', 'Python']
   },
   {
-    label: 'Artificial Intelligence',
-    icon: '/icons/bot.svg',
-    url: '/projects/ai'
+    title: 'Maze Solving Robot',
+    date: 'Nov 2024 - Dec 2024',
+    description: `A program to simulate Bayes filtering for a maze-solving robot using Java.`,
+    highlights: [
+      'Implemented Bayes filtering to localize the robot, including the sensor and probability models.',
+      'Allowed robot to solve mazes with varying sizes, sensor noise, and movement uncertainty.',
+      'Tuned value iteration to entice the robot to progress to the goal while avoiding obstacles.',
+      'Used an epsilon-greedy algorithm to encourage exploration at the start.'
+    ],
+    video: '/videos/localizing-robot.mp4',
+    mediaNote: `The robot has four sensors to detect walls in each of the cardinal directions.
+        The display shows where the robot actually is vs where the robot believes it is. The robot\'s belief is shown
+        as a heatmap of probabilities. The darker the blue, the more likely the robot is in that cell.
+        The robot attempts to navigate to the goal (green square) while avoiding obstacles (red squares).`,
+    github: 'https://github.com/rukar4/BayesFiltering',
+    stack: ['Java']
   },
   {
-    label: 'Computer Graphics',
-    icon: '/icons/file-image.svg',
-    url: '/projects/graphics'
+    title: 'Ray Tracer',
+    date: 'Jan 2025 - Jul 2025',
+    description: `A ray tracer command line app that takes in a file and generates a PPM image.`,
+    highlights: [
+      'Created a simple parser to read .txt files and generate ray traced images.',
+      'Calculated the view-port and pixel locations to shoot rays through.',
+      'Allows for custom camera positions and angles to view a scene.',
+      'Used recursive rays to determine reflection and shadow.',
+      'Applied the Phong shading model for color and lighting.',
+      'Used an optimized geometric algorithm to calculate color and lighting of certain pixels.',
+      'Implemented abstract class for props, allowing easy implementation for different shapes.',
+    ],
+    image: '/images/ray-tracer-scene-6.jpg',
+    github: 'https://github.com/rukar4/RayTracer',
+    stack: ['C#', '.NET'],
+    mediaNote: 'Ray traced image sample'
+  },
+  {
+    title: 'Movie Search App',
+    date: 'Jul 2025',
+    description: 'A simple movie search application designed to return the most popular movies based on a query.',
+    highlights: [
+      'Implemented client-server communication using Express.js and Axios',
+      'Communicated with third party API to retrieve movie details (TMDB)',
+      'Deployed server using Render for live demo',
+      'Used custom CSS for a responsive and modern design',
+    ],
+    image: '/images/movie-snapshot.png',
+    github: 'https://github.com/rukar4/Movie',
+    demo: 'https://rukar4.github.io/Movie/',
+    stack: ['Nuxt 3', 'CSS', 'Render']
+  },
+  {
+    title: 'Chess Game',
+    date: 'Aug 2023 - Dec 2023',
+    description: 'A chess game server that can host multiple games with a terminal client and back-end API.',
+    highlights: [
+      'Implemented all chess rules and game logic in Java',
+      'Built a terminal client for real-time interaction',
+      'Designed a database for game management',
+      'Implemented communication between client and server using sockets',
+      'Created DAOs for database operations',
+    ],
+    image: '/images/chess-snapshot.jpg',
+    github: 'https://github.com/rukar4/ChessGame',
+    stack: ['Java', 'MySQL']
   }
 ]
 </script>
@@ -62,20 +122,28 @@ const projectLinks = [
     </div>
   </div>
 
-    <div class="info-card has-overlay"
-         style="background-image: url('/images/byu-campus.jpg'); justify-content: center; width: 100%;">
-      <div style="width: 95%">
-        <div class="center-container">
-          <div>
-            <h2>Explore</h2>
-            <p>
-              Dive into my projects in full stack development, artificial intelligence, and computer graphics!
-            </p>
-          </div>
-        </div>
-        <IconBanner :links="projectLinks"/>
-      </div>
-    </div>
+  <hr>
+  <h2 class="center-container">
+    Explore My Projects
+  </h2>
+
+  <ProjectCard
+      v-for="(project, index) in projects"
+      :key="project.title"
+      :title="project.title"
+      :date="project.date"
+      :description="project.description"
+      :highlights="project.highlights"
+      :stack="project.stack"
+      :image="project.image"
+      :video="project.video"
+      :media-note="project.mediaNote"
+      :github="project.github"
+      :demo="project.demo"
+      :flipped="index % 2 === 1"
+  />
+
+  <ScrollUpBtn/>
 
   <footer>
     <hr>
@@ -99,7 +167,7 @@ const projectLinks = [
 
 .pfp-card {
   width: 40%;
-  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
 @media (max-width: 1500px) {
