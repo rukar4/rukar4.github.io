@@ -7,7 +7,7 @@ import ScrollUpBtn from "~/components/ScrollUpBtn.vue";
     <header>
       <div class="banner">
         <h1>
-          <NuxtLink to="/" class="title">
+          <NuxtLink to="/multi-page" class="title">
             Reid Merrell
           </NuxtLink>
         </h1>
@@ -41,36 +41,11 @@ import ScrollUpBtn from "~/components/ScrollUpBtn.vue";
       <ScrollUpBtn/>
     </main>
 
-    <footer>
-      <hr>
-      <p>
-        Connect with me on
-        <a href="https://www.linkedin.com/in/reid-merrell-ai-graphics-developer/"
-           target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </p>
-      <a href="https://github.com/rukar4/rukar4.github.io" target="_blank" rel="noopener noreferrer">Github</a>
-      <p>Reid Merrell 2025</p>
-    </footer>
+    <FooterContent/>
   </div>
 </template>
 
 <style scoped>
-.page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: auto;
-}
-
 span {
   position: absolute;
   width: 100%;
