@@ -1,0 +1,1 @@
+import{R as e}from"./Dk9w27jR.js";import{g as r,h as n,o as t}from"#entry";const s=r({__name:"linkedIn",setup(o){return(a,i)=>(t(),n(e,{target:"https://www.linkedin.com/in/reid-merrell-ai-graphics-developer/",name:"LinkedIn"}))}});export{s as default};
