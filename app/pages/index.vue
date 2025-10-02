@@ -56,21 +56,21 @@ const projects = [
     stack: ['C#', '.NET'],
     mediaNote: 'Ray traced image sample'
   },
-  {
-    title: 'Movie Search App',
-    date: 'Jul 2025',
-    description: 'A simple movie search application designed to return the most popular movies based on a query.',
-    highlights: [
-      'Implemented client-server communication using Express.js and Axios',
-      'Communicated with third party API to retrieve movie details (TMDB)',
-      'Deployed server using Render for live demo',
-      'Used custom CSS for a responsive and modern design',
-    ],
-    image: '/images/movie-snapshot.png',
-    github: 'https://github.com/rukar4/Movie',
-    demo: 'https://rukar4.github.io/Movie/',
-    stack: ['Nuxt 3', 'CSS', 'Render']
-  },
+  // {
+  //   title: 'Movie Search App',
+  //   date: 'Jul 2025',
+  //   description: 'A simple movie search application designed to return the most popular movies based on a query.',
+  //   highlights: [
+  //     'Implemented client-server communication using Express.js and Axios',
+  //     'Communicated with third party API to retrieve movie details (TMDB)',
+  //     'Deployed server using Render for live demo',
+  //     'Used custom CSS for a responsive and modern design',
+  //   ],
+  //   image: '/images/movie-snapshot.png',
+  //   github: 'https://github.com/rukar4/Movie',
+  //   demo: 'https://rukar4.github.io/Movie/',
+  //   stack: ['Nuxt 3', 'CSS', 'Render']
+  // },
   {
     title: 'Chess Game',
     date: 'Aug 2023 - Dec 2023',
