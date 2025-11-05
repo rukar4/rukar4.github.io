@@ -1,0 +1,1 @@
+import{R as e}from"./BllGkbDO.js";import{g as o,h as r,o as a}from"./BKx4Rp-4.js";const _=o({__name:"github",setup(c){return(n,s)=>{const t=e;return a(),r(t,{target:"https://github.com/rukar4",name:"GitHub"})}}});export{_ as default};
