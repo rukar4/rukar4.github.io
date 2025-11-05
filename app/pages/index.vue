@@ -13,8 +13,8 @@ const projects = [
         signs to perform traffic functions.`,
     highlights: [
         'Created ROS (Robotics Operating System) nodes to handle image processing, control, and navigation.',
-        'Calibrated camera to account for distortion and improve image processing accuracy.',
-        'Used odometry to track the robot\'s position and orientation.',
+        'Used computer vision techniques of color, canny edge and Hough line detection to find lanes on the road.',
+        'Implemented two PID controllers to guide the robot to the center of the lane using its position and angle relative to the lane.'
     ],
     image: '/images/duckietown.jpg',
     mediaNote: 'Video coming soon!',
